@@ -1,0 +1,91 @@
+
+$border: 1px solid #000;
+$white-color: #fff;
+$grey-color: #3b3b3b;
+$arial-font: Arial, Helvetica, sans-serif;
+
+
+.container {
+  font-family: $arial-font;
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
+  .wrapper {
+    width: 400px;
+    position: relative;
+    border: 1px solid #000;
+    .avatar {
+      position: absolute;
+      top: -40px;
+      left: -40px;
+      border-radius: 50px;
+      background-color: $white-color;
+      color: $grey-color;
+      &:hover {
+        color: #6ec3d2;
+        cursor: pointer;
+      }
+    }
+    .main {
+      border-bottom: $border;
+      padding: 0 20px;
+      h1 {
+        text-align: center;
+        &.name-text {
+          font-family: chalkduster;
+        }
+        &.hire-me {
+          padding: 20px;
+          border: $border;
+          text-align: center;
+          font-weight: 400;
+        }
+      }
+      p {
+        line-height: 1.5;
+        color: $grey-color;
+      }
+      .actions {
+        display: flex;
+        justify-content: space-between;
+        button {
+          background-color: $white-color;
+          border: $border;
+          color: $grey-color;
+          font-size: 16px;
+          padding: 10px;
+          width: 100px;
+          cursor: pointer;
+          
+          &:hover {
+            background-color: $grey-color;
+            color: $white-color;
+          }
+        }
+      }
+    }
+    .footer {
+      display: flex;
+      padding: 8px;
+      justify-content: space-between;
+      font-size: 18px;
+      font-weight: 600;
+      .left {
+        display: flex;
+        i {
+          color: #f37979;
+          cursor: pointer;
+        }
+      }
+      .right {
+        display: flex;
+      }
+      .divider {
+        border-left: 4px solid #000;
+        margin: 0 6px;
+        height: 18px;
+        display: inline-block;
+      }
+    }    
+  }
+}
